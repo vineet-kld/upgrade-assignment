@@ -1,0 +1,120 @@
+.fa {
+    margin:0 0 0 5px;
+    color: white;
+}
+
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    padding: 30px;
+}
+
+.blogAuthor button
+{
+    background: #ed2553;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2);
+}
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+#likeBlog {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+}
+.likeBlogButton #likeBlog {
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+.allCommentsHeading {
+    font-weight: bolder;
+    padding-left:10px;
+}
+
+.allCommentsBox {
+    background-color: #E2E4E6;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+.task-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.newComment {
+    background-color: #ed2553;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    max-width: 100px;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+}
+#commentContent{
+    width:60%;
+}
+
+.task-meta {
+    float: right;
+}
+.commentBody{
+    display: inline-table;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.editPostButton{
+    width: 70px;
+    padding: 10px;
+    cursor: pointer;
+    background: #ed2553;
+    color: #fff;
+    float: right;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    margin: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#commentCount {
+    color: #000;
+}

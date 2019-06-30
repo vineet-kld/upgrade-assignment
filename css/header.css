@@ -1,0 +1,112 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.headerLogo h1 {
+    font-family: Satisfy, cursive;
+    font-style: italic;
+    color: mediumblue;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.headerLogo h4 {
+    font-family: "Marck Script", cursive;
+    font-weight: lighter;
+    margin: 0 0 0 5px;
+}
+
+.headerButton button {
+    background: blue;
+    color: white;
+    padding: 5px;
+}
+
+.signInModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.signInModal-content {
+    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+
+}
+
+.signInModal-content h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.signInModal-content form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.signInModal-content form input {
+    background: #eeeeee;
+    padding: 15px;
+    border: none;
+}
+
+.signInModal-content form label {
+    margin: 5px;
+}
+
+.signInModal-content h6 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.signInModal-content form button {
+    background: green;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

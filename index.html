@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <div class="headerLogo">
+                <h1>ScriBBler</h1>
+                <h4>Explore, Imagine, Create</h4>
+            </div>
+            <div class="headerButton">
+                <button id="signUpBtn">Sign Up</button>
+                <button style="margin-right: 10px" id="signInBtn">Sign In</button>
+            </div>
+
+        </div>
+           
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <button><a href="html/bloglist.html">All Posts</a></button>
+            <button onclick="openCreatePost()">Create Post</button>
+
+        </div>
+    </div>
+    <div id="signUpModal" class="signInModal">
+
+        <div class="signInModal-content">
+            <span class="close">&times;</span>
+            <h1>Get Started</h1>
+
+            <form>
+                <label>Full Name</label>
+                <input placeholder="Enter Full Name" type="text" required>
+                <label>User Name</label>
+                <input placeholder="Enter UserName" type="text" required>
+                <label>Password</label>
+                <input placeholder="Enter Password" type="password" required>
+                <label>Confirm Password</label>
+                <input placeholder="Enter Confirm Password" type="password" required>
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="signInModal" class="signInModal">
+
+        <div class="signInModal-content">
+            <span class="close">&times;</span>
+            <h1>Welcome Back!</h1>
+
+            <form>
+                <!--<label>Full Name</label>
+                <input placeholder="Enter Full Name" type="text" required>-->
+                <label>User Name</label>
+                <input placeholder="Enter UserName" type="text" required>
+                <label>Password</label>
+                <input placeholder="Enter Password" type="password" required>
+                <!--<label>Confirm Password</label>
+                <input placeholder="Enter Confirm Password" type="password" required>-->
+                <button>Sign In</button>
+            </form>
+            <h6>Not a member? <span style="color: blue;cursor: pointer" id="signUpBtn1">Sign Up</span></h6>
+        </div>
+
+    </div>
+
+    <div id="newPostModal" class="newPostBox">
+    <div class="newPost-Content">
+        <span onclick="onCloseNewPost()" class="close_newPost">&times;</span>
+        <h1 id="formHeader" style="text-align:center ">Create Your Post</h1>
+        <form id="newPostForm">
+            <label for="newPostTitle">Title: </label>
+            <br />
+            <input id="newPostTitle" type="text" name="Title" class="post-title">
+            <br />
+            <br/>
+            <label for="postContent">Content: </label>
+            <textarea id="postContent" rows="27" cols="20" name="Content"></textarea>
+            <input id="newPostSubmit" type="submit" value="Create" align="right" style="margin-bottom: 10px">
+        </form>
+    </div>
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
